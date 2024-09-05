@@ -44,15 +44,6 @@ class POSTGRESQL:
 
         return result
 
-    def get_values(self):
-        try:
-            query = f"SELECT * FROM public.article;"
-            values = self.select_list(query)
-        except TypeError as ex:
-            self.log.debug(f"Произошла ошибка {ex}")
-            values = None
-        return values
-
     def get_article(self, id):
         try:
             query = f"SELECT * FROM public.article WHERE id = {id};"

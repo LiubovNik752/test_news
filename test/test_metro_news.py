@@ -1,10 +1,5 @@
-import pytest
 from datetime import datetime, timezone
-
-from allure import step, suite, sub_suite, title, link
 from conftest import db_connect
-from postgresql_connection import POSTGRESQL
-
 
 class Test_metro_news:
 

@@ -1,4 +1,3 @@
-import psycopg2
 from allure import step
 import pytest
 
@@ -17,7 +16,6 @@ def db_connect():
             db_database=db_database,
             port=port
         )
-        # test_db.log.debug(log_text)
         yield test_db
 
     del test_db
