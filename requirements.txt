@@ -1,0 +1,5 @@
+pytest==8.3.2
+psycopg2==2.9.9
+allure-pytest==2.13.2
+iniconfig==2.0.0
+
